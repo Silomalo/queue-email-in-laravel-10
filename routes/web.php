@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function(){
-    $details['email'] = 'silomalojoseph@gmail.com';
-    $details['name'] = 'silomalo';
+    $details['email'] = 'receivername@gmail.com';
+    $details['name'] = 'receiverName';
     dispatch(new App\Jobs\SendEmailJob($details));
 });
